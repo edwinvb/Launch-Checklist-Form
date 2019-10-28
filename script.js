@@ -10,6 +10,8 @@ window.addEventListener('load', function() {
 			alert('All fields are required!');
 		}
 		if (isNaN(pilotName.value)) {
+			return;
+		} else {
 			alert('OMG PUT IN A NAME');
 		}
 	});
