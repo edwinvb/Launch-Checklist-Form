@@ -1,5 +1,5 @@
-window.addEventListener('load', function() {
-	let form = document.querySelector('launchform');
+window.agddEventListener('load', function() {
+	let form = document.querySelector('launchForm');
 	form.addEventListener('submit', function(event) {
 		let pilotName = document.querySelector('input[name=pilotName]');
 		let copilotName = document.querySelector('input[name=copilotName]');
@@ -10,7 +10,6 @@ window.addEventListener('load', function() {
 		}
 	});
 });
-
 {
 	/* </html> Write your JavaScript code here! */
 }
