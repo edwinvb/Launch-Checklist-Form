@@ -12,8 +12,13 @@ window.addEventListener('load', function() {
 		if (isNaN(pilotName.value)) {
 			return;
 		} else {
-			alert('Enter Valid Name');
+			alert('Enter Valid Pilot Name');
 		}
+		if (isNaN(copilotName.value)) {
+			return;
+		} else {
+			alert('Enter Valid Co-Pilot Name');
+		
 	});
 });
 {
