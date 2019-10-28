@@ -8,7 +8,7 @@ window.addEventListener('load', function() {
 		if (pilotName.value === '' || copilotName.value === '' || fuelLevel.value === '' || cargoMass.value === '') {
 			alert('All fields are required!');
 		}
-		if (pilotName.value !== typeof string) {
+		if (pilotName.value !== typeof String) {
 			alert('Pilot name is invalid!');
 		}
 	});
