@@ -8,7 +8,7 @@ window.addEventListener('load', function() {
 
 		if (pilotName.value === '' || copilotName.value === '' || fuelLevel.value === '' || cargoMass.value === '') {
 			alert('All fields are required!');
-		} else if (Number.isNaN(pilotName.value)) {
+		} else if (isNaN(pilotName.value)) {
 			alert('OMG PUT IN A NAME');
 		}
 	});
