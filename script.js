@@ -4,10 +4,10 @@ window.addEventListener('load', function() {
 		let pilotName = document.querySelector('input[name=pilotName]');
 		let copilotName = document.querySelector('input[name=copilotName]');
 		let fuelLevel = document.querySelector('input[number=fuelLevel]');
-		if (pilotName.value === Number) {
-			alert('Pilot name is invalid!');
-		}
 		let cargoMass = document.querySelector('input[number=cargoMass]');
+		if (pilotName.value === String) {
+			alert('True');
+		}
 		if (pilotName.value === '' || copilotName.value === '' || fuelLevel.value === '' || cargoMass.value === '') {
 			alert('All fields are required!');
 		}
