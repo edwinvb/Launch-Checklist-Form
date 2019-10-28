@@ -4,12 +4,12 @@ window.addEventListener('load', function() {
 		let pilotName = document.querySelector('input[name=pilotName]');
 		let copilotName = document.querySelector('input[name=copilotName]');
 		let fuelLevel = document.querySelector('input[number=fuelLevel]');
+		if (pilotName.value !== typeof String) {
+			alert('Pilot name is invalid!');
+		}
 		let cargoMass = document.querySelector('input[number=cargoMass]');
 		if (pilotName.value === '' || copilotName.value === '' || fuelLevel.value === '' || cargoMass.value === '') {
 			alert('All fields are required!');
-		}
-		if (pilotName.value !== typeof String) {
-			alert('Pilot name is invalid!');
 		}
 	});
 });
