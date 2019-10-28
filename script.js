@@ -5,11 +5,11 @@ window.addEventListener('load', function() {
 		let copilotName = document.querySelector('input[name=copilotName]');
 		let fuelLevel = document.querySelector('input[number=fuelLevel]');
 		let cargoMass = document.querySelector('input[number=cargoMass]');
-		if (pilotName.value !== Number) {
-			alert('WHHHHHAAAAAAAAATTTTTT');
-		}
+
 		if (pilotName.value === '' || copilotName.value === '' || fuelLevel.value === '' || cargoMass.value === '') {
 			alert('All fields are required!');
+		} else if (pilotName.value === Number) {
+			alert('WHHHHHAAAAAAAAATTTTTT');
 		}
 	});
 });
