@@ -19,7 +19,7 @@ window.addEventListener('load', function() {
 		} else {
 			alert('Enter Valid Co-Pilot Name');
 		
-	};
+	}
 });
 {
 	/* </html> Write your JavaScript code here! */
