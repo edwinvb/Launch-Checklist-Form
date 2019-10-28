@@ -4,7 +4,7 @@ window.addEventListener('load', function() {
 		let pilotName = document.querySelector('input[name=pilotName]');
 		let copilotName = document.querySelector('input[name=copilotName]');
 		let fuelLevel = document.querySelector('input[number=fuelLevel]');
-		if (pilotName.value !== typeof String) {
+		if (pilotName.value !== String) {
 			alert('Pilot name is invalid!');
 		}
 		let cargoMass = document.querySelector('input[number=cargoMass]');
