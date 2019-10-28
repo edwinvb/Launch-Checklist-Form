@@ -9,12 +9,12 @@ window.addEventListener('load', function() {
 		if (pilotName.value === '' || copilotName.value === '' || fuelLevel.value === '' || cargoMass.value === '') {
 			alert('All fields are required!');
 		}
-		if (isNaN(fuelLevel.value)) {
+		if (Number.isNaN(fuelLevel.value)) {
 			return;
 		} else {
 			alert('Fuel Level Invalid');
 		}
-		if (isNaN(cargoMass.value)) {
+		if (Number.isNaN(cargoMass.value)) {
 			return;
 		} else {
 			alert('Cargo Mass Invalid');
