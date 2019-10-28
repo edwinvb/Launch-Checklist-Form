@@ -1,5 +1,5 @@
 window.agddEventListener('load', function() {
-	let form = document.querySelector('launchForm');
+	let form = document.querySelector('form');
 	form.addEventListener('submit', function(event) {
 		let pilotName = document.querySelector('input[name=pilotName]');
 		let copilotName = document.querySelector('input[name=copilotName]');
