@@ -8,9 +8,11 @@ window.addEventListener('load', function() {
 
 		if (pilotName.value === '' || copilotName.value === '' || fuelLevel.value === '' || cargoMass.value === '') {
 			alert('All fields are required!');
-		}
-		if (isNaN(fuelLevel.value) || isNaN(cargoMass.value)) {
+		} else if (isNaN(fuelLevel.value) || isNaN(cargoMass.value)) {
 			alert('Enter a Number');
+		} else {
+			document.getElementById('pilotStatus').innerHTML = `Pilot ${pilotName.value} is ready for launch`;
+			document.getElementById('copilotStatus').innerHTML = `Co-Pilot ${copilotName.value} is ready for launch`;
 		}
 	});
 });
