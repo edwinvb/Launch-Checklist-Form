@@ -13,6 +13,8 @@ window.addEventListener('load', function() {
 		} else {
 			document.getElementById('pilotStatus').innerHTML = `Pilot ${pilotName.value} is ready for launch`;
 			document.getElementById('copilotStatus').innerHTML = `Co-Pilot ${copilotName.value} is ready for launch`;
+			document.getElementById('pilotStatus').style.visibility = 'visible';
+			document.getElementById('copilotStatus').style.visibility = 'visible';
 		}
 	});
 });
