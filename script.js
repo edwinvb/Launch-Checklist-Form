@@ -20,14 +20,13 @@ window.addEventListener('load', function() {
 		let launchStatus = document.getElementById('launchStatus');
 		let cargoStatus = document.getElementById('cargoStatus');
 		console.log(pilotName.value, copilotName.value, fuelLevel.value, cargoMass.value);
-		if (fuelLevel.value < 10000 || cargoMass > 10000) {
+		if (fuelLevel.value < 10000 || cargoMass.value > 10000) {
 			missionUpdate.style = 'visibility: visible';
 			launchStatus.style = 'color: red';
 			launchStatus.innerHTML = 'SHUTTLE NOT READY FOR LAUNCH';
 			fuelLevel.value <= 10000 ? (fuelStatus.innerHTML = 'Fuel level not high enough for launch') : null;
 			cargoMass.value >= 10000 ? (cargoStatus.innerHTML = 'Cargo Mass too High for Liftoff') : null;
-		}
-		if (fuelLevel.value > 9999 || cargoMass < 9999) {
+		} else if (fuelLevel.value > 9999 || cargoMass.value < 9999) {
 			missionUpdate.style = 'visibility: visible';
 			launchStatus.style = 'color: green';
 			launchStatus.innerHTML = 'SHUTTLE IS READY FOR LAUNCH';
